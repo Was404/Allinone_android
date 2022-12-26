@@ -31,6 +31,9 @@
         <activity
             android:name= ".OperatActivity">
         </activity>
+        <activity
+            android:name= ".SettigsActivity">
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"
