@@ -12,6 +12,7 @@ public class AboutActivity extends AppCompatActivity {
 
     Button button_back, btn_next;
     TextView textteorver1;
+    String[] teor_block;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +21,7 @@ public class AboutActivity extends AppCompatActivity {
         button_back = (Button) findViewById(R.id.button_back);
         btn_next = (Button) findViewById(R.id.btn_next);
         textteorver1= (TextView) findViewById(R.id.textteorver1);
+        teor_block = getResources().getStringArray(R.array.teor_block);
 
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,18 +30,20 @@ public class AboutActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        textteorver1.setText(teor_block[0]);
         btn_next.setOnClickListener(new View.OnClickListener() {
+            int count = 1;
             @Override
             public void onClick(View view) {
-                int count = 0;
-                if (count==0) {
-                    textteorver1.setText(R.string.teor_block2);
-                    count += 1;
+                if (count <= 7) {
+                    textteorver1.setText(teor_block[count]);
+                    count ++;
                 }
-                if (count==1)
+                else
                 {
-                    textteorver1.setText(R.string.teor_block3);
+                    count = 0;
+                    textteorver1.setText(teor_block[count]);
+
                 }
             }
         });
