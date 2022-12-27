@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/adamina"
             android:isScrollContainer="true"
-            android:text="@string/teor_block1"
+            android:text="@string/button_teor"
             android:textSize="25sp" />
 
     </ScrollView>
