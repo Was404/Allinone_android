@@ -34,6 +34,9 @@
         <activity
             android:name= ".SettigsActivity">
         </activity>
+        <activity
+            android:name= ".CircuitryActivity">
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"

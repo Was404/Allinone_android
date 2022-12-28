@@ -11,7 +11,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button button_menu, button_teorver, button_opersys;
+    Button button_menu, button_teorver, button_opersys, button_chema;
     ImageButton settings_btn;
 
     @Override
@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         button_teorver = (Button) findViewById(R.id.button_teorver);
         button_opersys = (Button) findViewById(R.id.button_opersys);
         settings_btn = (ImageButton) findViewById(R.id.settings_btn);
+        button_chema = (Button) findViewById(R.id.button_shema);
 
 
         button_teorver.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +46,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, SettigsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        button_chema.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, CircuitryActivity.class);
                 startActivity(intent);
             }
         });

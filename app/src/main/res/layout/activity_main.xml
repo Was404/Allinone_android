@@ -10,7 +10,7 @@
         android:id="@+id/constraintLayout"
         android:layout_width="83dp"
         android:layout_height="660dp"
-        android:background="@color/layout2"
+        android:background="@color/gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -101,6 +101,20 @@
         android:text="@string/btn_opersys"
         android:textAlignment="center"
         android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_shema"
+        android:layout_width="176dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="500dp"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/btn_shem"
+        android:textAlignment="center"
+        android:textSize="21sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
