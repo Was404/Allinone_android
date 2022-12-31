@@ -8,11 +8,13 @@ import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
 
     Button button_menu, button_teorver, button_opersys, button_chema;
     ImageButton settings_btn;
+    LinearLayout layout1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
