@@ -6,7 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         button_opersys = (Button) findViewById(R.id.button_opersys);
         settings_btn = (ImageButton) findViewById(R.id.settings_btn);
         button_chema = (Button) findViewById(R.id.button_shema);
+        final Animation anim_tranclate = AnimationUtils.loadAnimation(this, R.anim.anim_tranclate);
 
 
         button_teorver.setOnClickListener(new View.OnClickListener() {
@@ -55,6 +59,28 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, CircuitryActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        button_menu.setOnClickListener(new View.OnClickListener() {
+            boolean press = true;
+            @Override
+            public void onClick(View view) {
+                if (press){
+                    button_teorver.setVisibility(View.GONE);
+                    button_opersys.setVisibility(View.GONE);
+                    button_chema.setVisibility(View.GONE);
+                    button_teorver.startAnimation(anim_tranclate);
+                    button_opersys.startAnimation(anim_tranclate);
+                    button_chema.startAnimation(anim_tranclate);
+                    press = false;
+                }
+                else{
+                    button_teorver.setVisibility(View.VISIBLE);
+                    button_opersys.setVisibility(View.VISIBLE);
+                    button_chema.setVisibility(View.VISIBLE);
+                    press = true;
+                }
             }
         });
 
