@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //comm
         button_menu = (Button) findViewById(R.id.button_menu);
         button_teorver = (Button) findViewById(R.id.button_teorver);
         button_opersys = (Button) findViewById(R.id.button_opersys);
