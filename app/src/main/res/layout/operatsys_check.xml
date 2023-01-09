@@ -10,6 +10,7 @@
         android:id="@+id/scrolloperat"
         android:layout_width="404dp"
         android:layout_height="594dp"
+        android:layout_marginStart="5dp"
         app:layout_constraintBottom_toTopOf="@+id/backlayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,7 +22,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/adamina"
             android:isScrollContainer="true"
-            android:text="@string/operatsys_lec1"
+            android:text="operatsys_lec1"
             android:textSize="25sp" />
 
     </ScrollView>
