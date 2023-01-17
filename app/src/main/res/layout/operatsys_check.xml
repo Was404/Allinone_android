@@ -31,7 +31,7 @@
         android:id="@+id/backlayout"
         android:layout_width="410dp"
         android:layout_height="63dp"
-        android:background="@color/layout2"
+        android:background="@color/gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">

@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.ThemeUtils;
 
 public class SettigsActivity extends AppCompatActivity {
     TextView mygithub;
@@ -23,6 +24,7 @@ public class SettigsActivity extends AppCompatActivity {
 
         mygithub = (TextView) findViewById(R.id.mygithub);
         button_back = (Button) findViewById(R.id.button_back);
+
         String textToFirsturl = "Project on github";
         SpannableString ss = new SpannableString(textToFirsturl);
         ss.setSpan(new URLSpan(String.valueOf(mygithub)), 0, mygithub.length(),
@@ -42,5 +44,6 @@ public class SettigsActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }
